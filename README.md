@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Demo
 
 Deployed to firebase using `firebase-cli`.
-[Open Weather](https://github.com/angular/angular-cli)
+[Open Weather](https://open-weather-ea834.firebaseapp.com)
 
 ## Development server
 
