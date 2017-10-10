@@ -1,0 +1,25 @@
+<div class="weather-container" *ngFor="let weather of weathers">
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">{{ weather[0].dt | myDate | date: 'EEE, MMM d, y' }}</h4>
+      <div class="card-text">
+        <ul>
+          <li *ngFor="let item of weather">
+            <i class="owi owi-{{ item.weather[0].icon }}" title="{{ item.weather[0].main }}"></i>
+            <div class="weather-info">
+              <p class="time">
+                {{ item.dt | myDate | date: 'hh:mm a' }}
+              </p>
+              <p class="temp">
+                {{ item.main.temp }}&deg;C
+              </p>
+              <p class="min-temp">
+                {{ item.main.temp_min }}&deg;C
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
