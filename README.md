@@ -10,10 +10,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests & end-to-end test
-
-Unit tests and end to end tests are not available with this release.
-
 ## Technology stack
 
 HTML5, CSS3, Angular 4, Bootstrap 4, SASS, ES6, Webpack, NPM
