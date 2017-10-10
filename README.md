@@ -15,7 +15,10 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.git
+* Make sure to have the angular cli installed globally using `sudo npm install -g @angular/cli`
+* Clone the repo and `cd` to the folder
+* Install npm dependencies using `npm install`
+* Run `ng build --prod` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Technology stack
 
