@@ -32,3 +32,4 @@ HTML5, CSS3, Angular 4, Bootstrap 4, SASS, ES6, Webpack, NPM
 * Implement routing for deatiled page on each date (for full description on weather)
 * Unit tests
 * CI & CD using Travis CI 
+* Responsive design and fixes.
