@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.5.
 
+Angular CLI need to be installed globally for building the project (for ES6 to ES5 coversion, packaging and all).
+
 ## Demo
 
 Deployed to firebase using `firebase-cli`.
