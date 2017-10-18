@@ -1,7 +1,9 @@
 import { WeatherService } from './weather/weather.service';
 import { Component, OnInit } from '@angular/core';
 
-
+/**
+ * The main AppComponent in which the app bootstraps
+ */
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,19 +11,38 @@ import { Component, OnInit } from '@angular/core';
   providers: [WeatherService]
 })
 export class AppComponent implements OnInit {
+  /**
+   * weather forecast data
+   * @type {string[]}
+   */
   weatherForecastData: string[];
+
+  /**
+   * Error message for api callback
+   * @type {*}
+   */
   errorMessage: any;
 
-  constructor(private _weatherService_: WeatherService) { }
+  /**
+   * Creates an instance of AppComponent.
+   * @param {WeatherService} _weatherService_ weatherservice injectable
+   */
+  constructor(private _weatherService_: WeatherService) {}
 
+  /**
+   * Initialize component
+   */
   ngOnInit() {
-    this._weatherService_.getWeatherForecast()
-      .subscribe(
+    /**
+     * Call weatherforecast api using injectable service
+     */
+    this._weatherService_.getWeatherForecast().subscribe(
       data => {
         this.weatherForecastData = data;
       },
       err => {
         this.errorMessage = <any>err;
-      });
+      }
+    );
   }
 }
