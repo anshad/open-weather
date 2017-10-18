@@ -35,19 +35,11 @@ export class WeatherService {
     }, {});
   }
 
-  private arrayFromObject(obj: any) {
-    const arr = [];
-    for (const i in obj) {
-      arr.push(obj[i]);
-    }
-    return arr;
-  }
-
   private extractData(res: any) {
     let body = res.json();
     body = body.list || {};
     body = this.groupBy(body, 'dt');
-    body = this.arrayFromObject(body);
+    body = Object.values(body);
     return body.slice(0, 5);
   }
 

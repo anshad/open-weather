@@ -9,8 +9,8 @@ import { Component, OnInit } from '@angular/core';
   providers: [WeatherService]
 })
 export class AppComponent implements OnInit {
-  weatherForecastData: any[];
-  errorMessage: string;
+  weatherForecastData: string[];
+  errorMessage: any;
 
   constructor(private _weatherService_: WeatherService) { }
 
