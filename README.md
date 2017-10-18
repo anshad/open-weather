@@ -26,7 +26,7 @@ HTML5, CSS3, Angular 4, Bootstrap 4, SASS, ES6, Webpack, NPM
 
 ## Todo
 
-* Improve data extraction method
+* ~~Improve data extraction method~~
 * Update UI with some colors, highlights for current day, etc.
 * Option to get weather list with a city name
 * Implement routing for deatiled page on each date (for full description on weather)
