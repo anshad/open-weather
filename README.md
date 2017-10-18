@@ -12,6 +12,10 @@ Deployed to firebase using `firebase-cli`.
 
 **[Open Weather](https://open-weather-ea834.firebaseapp.com)**
 
+## Documentation
+
+**[Detailed Code Documentation](https://anshad.github.io/open-weather/)**
+
 ## Development server
 
 Run `ng serve -o` for a dev server. App will open in the browser at `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
