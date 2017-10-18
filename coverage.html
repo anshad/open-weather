@@ -45,7 +45,7 @@
                                     </a>
                                 </li>
                                 <li class="link">
-                                  <a href="./index.html"  class="active" ><span class="fa fa-file-text-o"></span>README</a>
+                                  <a href="./index.html" ><span class="fa fa-file-text-o"></span>README</a>
                                 </li>
                         </ul>
                     </li>
@@ -149,7 +149,7 @@
             
             
                     <li class="chapter">
-                        <a data-type="chapter-link" href="./coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                        <a data-type="chapter-link" href="./coverage.html"  class="active" ><span class="fa fa-tasks"></span>Documentation coverage</a>
                     </li>
             
                     <li class="divider"></li>
@@ -194,7 +194,7 @@
                                            </a>
                                        </li>
                                        <li class="link">
-                                         <a href="./index.html"  class="active" ><span class="fa fa-file-text-o"></span>README</a>
+                                         <a href="./index.html" ><span class="fa fa-file-text-o"></span>README</a>
                                        </li>
                                </ul>
                            </li>
@@ -298,7 +298,7 @@
                    
                    
                            <li class="chapter">
-                               <a data-type="chapter-link" href="./coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                               <a data-type="chapter-link" href="./coverage.html"  class="active" ><span class="fa fa-tasks"></span>Documentation coverage</a>
                            </li>
                    
                            <li class="divider"></li>
@@ -312,46 +312,9 @@
                    
                    </nav>
                </div>
-               <div class="content getting-started">
+               <div class="content coverage">
                    <div class="content-data">
 
-<h1 id="openweather">OpenWeather</h1>
-<p>A web app for displaying 5 days weatherforecast for a city (<code>Bangalore, India</code>).</p>
-<p>This project was generated with <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 1.4.5.</p>
-<p>Angular CLI need to be installed globally for building the project (for ES6 to ES5 coversion, packaging and all).</p>
-<h2 id="demo">Demo</h2>
-<p>Deployed to firebase using <code>firebase-cli</code>.</p>
-<p><strong><a href="https://open-weather-ea834.firebaseapp.com">Open Weather</a></strong></p>
-<h2 id="development-server">Development server</h2>
-<p>Run <code>ng serve -o</code> for a dev server. App will open in the browser at <code>http://localhost:4200/</code>. The app will automatically reload if you change any of the source files.</p>
-<h2 id="build">Build</h2>
-<ul>
-<li>Make sure to have the angular cli installed globally using <code>sudo npm install -g @angular/cli</code></li>
-<li>Clone the repo and <code>cd</code> to the folder</li>
-<li>Install npm dependencies using <code>npm install</code></li>
-<li>Run <code>ng build --prod</code> to build the project. The build artifacts will be stored in the <code>dist/</code> directory.</li>
-</ul>
-<h2 id="technology-stack">Technology stack</h2>
-<p>HTML5, CSS3, Angular 4, Bootstrap 4, SASS, ES6, Webpack, NPM</p>
-<h2 id="features">Features</h2>
-<ul>
-<li>Display 5 days weatherforecast using openweathermap api <code>https://api.openweathermap.org</code></li>
-<li>Documentation using <code>https://github.com/compodoc/compodoc</code></li>
-<li>Coded with <code>Angular CLI</code> and <code>VS Code</code> in love with <code>Mac</code></li>
-<li>Unit tests with <code>jasmine</code> and <code>karma</code></li>
-<li>Demo deployed to <code>firebase</code></li>
-</ul>
-<h2 id="todo">Todo</h2>
-<ul>
-<li><del>Improve data extraction method</del></li>
-<li><del>Documentation</del></li>
-<li>Update UI with some colors, highlights for current day, etc.</li>
-<li>Option to get weather list with a city name</li>
-<li>Implement routing for deatiled page on each date (for full description on weather)</li>
-<li>Unit tests</li>
-<li>CI &amp; CD using Travis CI </li>
-<li>Responsive design and fixes.</li>
-</ul>
 
 
 
@@ -363,7 +326,105 @@
 
 
 
+<ol class="breadcrumb">
+  <li>Documentation coverage</li>
+</ol>
 
+<img src="./images/coverage-badge.svg">
+
+<table class="table table-bordered coverage" id="coverage-table">
+    <thead class="coverage-header">
+        <tr>
+            <th>File</th>
+            <th>Type</th>
+            <th>Identifier</th>
+            <th style="text-align:right" class="statements" data-sort-default>Statements</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="good">
+            <td>
+                <a href="./components/AppComponent.html">src/app/app.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                AppComponent
+            </td>
+            <td align="right" data-sort="100">
+                <span class="coverage-percent">100 %</span>
+                <span class="coverage-count">(5/5)</span>
+            </td>
+        </tr>
+        <tr class="good">
+            <td>
+                <a href="./components/HeaderComponent.html">src/app/header/header.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                HeaderComponent
+            </td>
+            <td align="right" data-sort="100">
+                <span class="coverage-percent">100 %</span>
+                <span class="coverage-count">(2/2)</span>
+            </td>
+        </tr>
+        <tr class="good">
+            <td>
+                <a href="./pipes/MyDatePipe.html">src/app/my-date.pipe.ts</a>
+            </td>
+            <td>
+                pipe
+            </td>
+            <td>
+                MyDatePipe
+            </td>
+            <td align="right" data-sort="100">
+                <span class="coverage-percent">100 %</span>
+                <span class="coverage-count">(1/1)</span>
+            </td>
+        </tr>
+        <tr class="good">
+            <td>
+                <a href="./components/WeatherListComponent.html">src/app/weather/weather-list/weather-list.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                WeatherListComponent
+            </td>
+            <td align="right" data-sort="100">
+                <span class="coverage-percent">100 %</span>
+                <span class="coverage-count">(3/3)</span>
+            </td>
+        </tr>
+        <tr class="good">
+            <td>
+                <a href="./injectables/WeatherService.html">src/app/weather/weather.service.ts</a>
+            </td>
+            <td>
+                injectable
+            </td>
+            <td>
+                WeatherService
+            </td>
+            <td align="right" data-sort="100">
+                <span class="coverage-percent">100 %</span>
+                <span class="coverage-count">(6/6)</span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<script src="js/libs/tablesort.min.js"></script>
+<script src="js/libs/tablesort.number.min.js"></script>
+<script>
+    new Tablesort(document.getElementById('coverage-table'));
+</script>
 
                    </div><div class="search-results">
     <div class="has-results">
