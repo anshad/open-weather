@@ -10,6 +10,10 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   /**
+   * Application title
+   */
+  title = 'Open Weather Forecast - Bangalore, India';
+  /**
    * Creates an instance of HeaderComponent.
    */
   constructor() {}
