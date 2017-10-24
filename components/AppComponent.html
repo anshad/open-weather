@@ -441,6 +441,9 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                 <a href="#getWeather">getWeather</a>
+                            </li>
+                            <li>
                                  <a href="#ngOnInit">ngOnInit</a>
                             </li>
                         </ul>
@@ -509,6 +512,40 @@
             <h3 id="methods">
                 Methods
             </h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="getWeather"></a>
+                            <span class="name"><b> getWeather</b><a href="#getWeather"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>getWeather()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/app.component.ts:42</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Call weatherforecast api using injectable service</p>
+    </div>
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
@@ -660,9 +697,13 @@ export class AppComponent implements OnInit {
    * Initialize component
    */
   ngOnInit() {
-    /**
-     * Call weatherforecast api using injectable service
-     */
+    this.getWeather();
+  }
+
+  /**
+   * Call weatherforecast api using injectable service
+   */
+  getWeather() {
     this._weatherService_.getWeatherForecast().subscribe(
       data &#x3D;&gt; {
         this.weatherForecastData &#x3D; data;
