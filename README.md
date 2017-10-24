@@ -27,6 +27,12 @@ Run `ng serve -o` for a dev server. App will open in the browser at `http://loca
 * Install npm dependencies using `npm install`
 * Run `ng build --prod` to build the project. The build artifacts will be stored in the `dist/` directory.
 
+## Other tools and commands
+
+* Documentation deployment to GitHub pages using `https://www.npmjs.com/package/angular-cli-ghpages`. Command - `sudo ngh --dir "documentation" --no-silent`
+* App deployment to firebase using `https://www.npmjs.com/package/firebase-tools`. Command - `firebase deploy`
+* Generate or update documentation using `https://github.com/compodoc/compodoc`. Command - `compodoc -p src/tsconfig.app.json`
+
 ## Technology stack
 
 HTML5, CSS3, Angular 4, Bootstrap 4, SASS, ES6, Webpack, NPM
