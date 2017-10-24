@@ -33,9 +33,13 @@ export class AppComponent implements OnInit {
    * Initialize component
    */
   ngOnInit() {
-    /**
-     * Call weatherforecast api using injectable service
-     */
+    this.getWeather();
+  }
+
+  /**
+   * Call weatherforecast api using injectable service
+   */
+  getWeather() {
     this._weatherService_.getWeatherForecast().subscribe(
       data => {
         this.weatherForecastData = data;

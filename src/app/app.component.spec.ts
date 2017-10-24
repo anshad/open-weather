@@ -1,39 +1,50 @@
+import { WeatherService } from './weather/weather.service';
+import { Observable } from 'rxjs/Observable';
 import { MyDatePipe } from './my-date.pipe';
 import { WeatherListComponent } from './weather/weather-list/weather-list.component';
 import { HeaderComponent } from './header/header.component';
 import { HttpModule } from '@angular/http';
-import { TestBed, async } from '@angular/core/testing';
+import { DebugElement } from '@angular/core';
+import { TestBed, async, ComponentFixture } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [
-        AppComponent,
-        HeaderComponent,
-        WeatherListComponent,
-        MyDatePipe
-      ],
-      imports: [
-        HttpModule
-      ]
-    }).compileComponents();
-  }));
+  let fixture: ComponentFixture<AppComponent>;
+  let component: AppComponent;
+  let _weatherService_: WeatherService;
+  let de: DebugElement;
 
-  it('should create the app', async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
-  }));
-  // it(`should have as title 'app'`, async(() => {
-  //   const fixture = TestBed.createComponent(AppComponent);
-  //   const app = fixture.debugElement.componentInstance;
-  //   expect(app.title).toEqual('app');
-  // }));
-  // it('should render title in a h1 tag', async(() => {
-  //   const fixture = TestBed.createComponent(AppComponent);
-  //   fixture.detectChanges();
-  //   const compiled = fixture.debugElement.nativeElement;
-  //   expect(compiled.querySelector('h1').textContent).toContain('Welcome to app!');
-  // }));
+  beforeEach(
+    async(() => {
+      TestBed.configureTestingModule({
+        declarations: [
+          AppComponent,
+          HeaderComponent,
+          WeatherListComponent,
+          MyDatePipe
+        ],
+        providers: [WeatherService],
+        imports: [HttpModule]
+      }).compileComponents();
+
+      fixture = TestBed.createComponent(AppComponent);
+      component = fixture.componentInstance;
+      de = fixture.debugElement;
+      _weatherService_ = fixture.debugElement.injector.get(WeatherService);
+    })
+  );
+
+  /**
+   * Test instance
+   */
+  it(
+    'should create the app',
+    async(() => {
+      expect(component).toBeTruthy();
+    })
+  );
+
+  it('should set weatherForecastData', () => {
+    //
+  });
 });
