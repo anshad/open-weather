@@ -43,7 +43,8 @@ HTML5, CSS3, Angular 4, Bootstrap 4, SASS, ES6, Webpack, NPM
 * Documentation using `https://github.com/compodoc/compodoc`
 * Coded with `Angular CLI` and `VS Code` in love with `Mac`
 * Unit tests with `jasmine` and `karma`
-* Demo deployed to `firebase`
+* Demo deployed to `firebase` using firebase cli tools
+* editorconfig and code lints
 
 ## Todo
 
@@ -52,6 +53,6 @@ HTML5, CSS3, Angular 4, Bootstrap 4, SASS, ES6, Webpack, NPM
 * Update UI with some colors, highlights for current day, etc.
 * Option to get weather list with a city name
 * Implement routing for deatiled page on each date (for full description on weather)
-* Unit tests
-* CI & CD using Travis CI 
+* ~~Unit tests~~
+* CI & CD using Travis CI
 * Responsive design and fixes.
